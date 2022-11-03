@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adopcion.css">
+    <title>AdoptMe</title>
+    <link rel="shortcut icon" href="../huella.png">
+
+</head>
+
+
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="/">
+                <img src="../huella.png" alt="huella" class="img-icon">
+            </a>
+            <a href="/" class="link">Home</a>
+            <a href="/comentarios" class="link">Comentarios</a>
+            <a href="/adopcion" class="link">Adopcion</a>
+            <a href="/suscripcion" class="link">Subscripcion</a>
+        </div>
+    </nav>
+    <h1 class="titulo">Adopta un nuevo o una nueva integrante de la familia </h1>
+    <div class="select">
+
+        <select name="razas" id="raza" class="select" onchange="filtros(this) ">
+            <option value="0">Selecciona una raza</option>
+            <!-- Aqui se insertara las opciones con los nombres de las razas -->
+        </select>
+    </div>
+    <!--     <button onclick="filtros()">Buscar</button> -->
+    <div id="cards-razas" class="card-oculta">
+        <img src="" alt="" id="img-nueva">
+        <h1 id="text-card"></h1>
+    </div>
+    <div id="cards" class="cards">
+        <!-- Aqui se inserta la card con las imagenes y respectivo texto como nombre y edad (El nombre es la raza.) -->
+    </div>
+</body>
+<script src="main-adopt.js">
+
+</script>
+
+</html>

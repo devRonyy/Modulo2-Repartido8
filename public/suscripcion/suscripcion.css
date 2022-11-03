@@ -1,0 +1,75 @@
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black; 
+ 
+}
+
+.suscribirse{
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+h1{
+    color: white;
+    font-size: 80px;
+}
+
+
+.foto{
+    float: right;
+    margin: 50px;
+}
+
+.foto1{
+    height: 400px;
+}
+
+p{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 200px;
+}
+
+.input{
+    width: 75%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+button{
+    text-align: center;
+    width: 55%;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+/* Barra de navegacion */
+
+.nav-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #242424;
+    padding: 10px;
+}
+
+.img-icon{
+    width: 40px;
+}
+
+
+.link {
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

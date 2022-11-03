@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleComentarios.css">
+    <title>Comentarios</title>
+    <link rel="shortcut icon" href="../huella.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="comentarios">
+        </div>
+        <div id="formulario">
+            <form method="post">
+                <p>Nombre:</p>
+                <input type="text" id="nombre" name="nombre">
+                <p>Comentario</p>
+                <textarea id="comentario" cols="30" rows="5" name="comentario"></textarea><br>
+                <button type="submit" id="boton">Enviar</button>
+            </form>
+            <h2>
+                Sitio oficial de adopcion
+                <div class="mask">
+                    <span data-show> El mejor lugar</span>
+                    <span>para adoptar,</span>
+                    <span>cambiar vidas,</span>
+                    <span>y dar una oportunidad!</span>
+                </div>
+            </h2>
+            <div class="back">
+                <a href="/" class="link">Volver al inicio</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function eliminarDiv(e) {
+        e.closest('.cartaComentario').remove(); // Busca el elemento con la clase del padre para eliminarlo
+    }
+    const form = document.querySelector('form');
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const nombre = document.getElementById('nombre').value;
+        const comentario = document.getElementById('comentario').value;
+        const respuesta = await fetch('../comentarios', {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify({
+                nombre: nombre,
+                comentario: comentario
+            })
+        })
+
+        const datos = await respuesta.json();
+        document.getElementById('comentarios').innerHTML += '<div class = "cartaComentario">' + '<div class = "fotoContainer"> </div>' + datos.Mensaje + '</div>';
+    });
+
+
+</script>
+<script src="./span.js"></script>
+
+
+</html>
