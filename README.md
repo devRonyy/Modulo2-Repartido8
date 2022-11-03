@@ -16,6 +16,8 @@ En la sección comentarios podremos dejar un comentario colocando nuestro nombre
 
 Herramientas Usadas 🛠️
 VisualStudioCode - Editor de código.
+GIT - Controlador de versiones.
+Trello - Organizador de tareas.
 
 Autores ✒️
 Rony Silva - Maximiliano Correa - Juanma Romero
