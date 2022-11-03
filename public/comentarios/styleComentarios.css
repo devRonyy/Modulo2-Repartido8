@@ -136,7 +136,6 @@ form {
 }
 
 h2 {
-
     width: 90%;
     font-size: 60px;
     font-family: 'Helvetica' sans-serif;
@@ -148,7 +147,6 @@ h2 {
 }
 
 .mask {
-
     height: 100px;
     position: relative;
     overflow: hidden;
@@ -156,7 +154,6 @@ h2 {
 }
 
 .mask span {
-
     display: block;
     box-sizing: border-box;
     position: absolute;
